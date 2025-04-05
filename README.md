@@ -16,7 +16,7 @@ Set and manage budgets effectively, ensuring better control over your spending.
 Receive detailed, AI-generated financial advice tailored to your specific financial data, powered by OpenAI's GPT-4 model.
 
 ### 👉 Responsive Design
-Enjoy a seamless experience on any device, with responsive layouts optimized for various screen sizes.
+Enjoy a seamless experience on any device, with responsive layouts optimized for various screen sizes. 
 
 
 ## Tech Stack
