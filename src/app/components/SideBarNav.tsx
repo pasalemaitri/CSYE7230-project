@@ -1,4 +1,4 @@
-"use client";
+'use client'
 import React, { useEffect } from "react";
 import Image from "next/image";
 import { UserButton } from "@clerk/nextjs";
@@ -9,21 +9,21 @@ import { menuList } from "../../constants/sidebarMenuList";
 const SidebarNav = () => {
   const path = usePathname();
 
+
+
   return (
     <div className="h-screen p-5 border shadow-md">
       <div className="flex flex-row items-center gap-4">
-        <Image src="/expenseLogo.png" height={40} width={50} alt="logo" />
-        <span className="hidden sm:block text-green-700 font-bold text-2xl italic">
-          Money Mind
-        </span>
+        <Image src="/moneyMindLogo.png" height={40} width={50} alt="Money Mind Logo" />
+        <span className="hidden sm:block text-orange-700 font-bold text-2xl italic">Money Mind</span>
       </div>
 
       <div className="mt-5">
-        {menuList.map((menu, index) => (
+        {menuList.map((menu,index) => (
           <Link href={menu.path} key={index}>
             <h2
-              className={`flex gap-2 items-center text-gray-500 font-medium mb-2 p-4 cursor-pointer rounded-full hover:text-primary hover:bg-green-100
-                ${path == menu.path && "text-primary bg-green-100"}
+              className={`flex gap-2 items-center text-gray-500 font-medium mb-2 p-4 cursor-pointer rounded-full hover:text-primary hover:bg-orange-100
+                ${path == menu.path && 'text-primary bg-orange-100'}
               `}
             >
               <menu.icon />

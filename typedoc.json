@@ -1,14 +1,13 @@
 {
-    "entryPoints": ["lib/actions/**/*.ts"],   // Specify the correct path
-    "out": "docs",
-    "includeVersion": true,
-    "exclude": [
-      "**/node_modules/**", 
-      "**/src/app/**",       // Exclude app-related folders
-      "**/src/app/api/**"    // Exclude API/webhooks folder
-    ],
-    "name": "Money Mind API Documentation",
-    "tsconfig": "./tsconfig.json",
-    "entryPointStrategy": "expand"
-  }
-  
+  "entryPoints": ["lib/actions/**/*.ts"],   // Specify the correct path
+  "out": "docs",
+  "includeVersion": true,
+  "exclude": [
+    "**/node_modules/**", 
+    "**/src/app/**",       // Exclude app-related folders
+    "**/src/app/api/**"    // Exclude API/webhooks folder
+  ],
+  "name": "Money Mind API Documentation",
+  "tsconfig": "./tsconfig.json",
+  "entryPointStrategy": "expand"
+}

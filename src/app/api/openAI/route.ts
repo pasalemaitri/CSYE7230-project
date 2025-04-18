@@ -18,7 +18,7 @@ export const POST = async (req: Request) => {
             messages: [
                 { 
                     role: "system", 
-                    content: "You are a knowledgeable and helpful Money Mind advisor. Your job is to provide detailed, accurate, and insightful financial advice, based on my budgets, total expenses, and income streams. Always aim to explain concepts cleary and make it short in 1 paragraph." 
+                    content: "You are a knowledgeable and helpful Money Mind advisor. Your job is to provide detailed, accurate, and insightful financial advice, based on my budgets, total expenses, and income streams. Always aim to explain concepts clearly and make it short in 1 paragraph." 
                 },
                 {
                     role: "user",

@@ -1,7 +1,9 @@
-import type { Metadata } from "next";
-import localFont from "next/font/local";
-import "./globals.css";
-import ServiceProvider from "@/app/components/ServiceProvider";
+import './globals.css';
+
+import type { Metadata } from 'next';
+import localFont from 'next/font/local';
+
+import ServiceProvider from '@/app/components/ServiceProvider';
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -15,8 +17,11 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "SaaS AI-Money Mind",
-  description: "AI-Money Mind deisnged for personal and business use",
+  title: "Money Mind",
+  description: "AI-Powered Money Mind designed for personal and business use",
+  icons: {
+    icon: '/moneyMindLogo.png',
+  },
 };
 
 export default function RootLayout({
@@ -29,7 +34,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <ServiceProvider>{children}</ServiceProvider>
+      <ServiceProvider>
+          {children}
+        </ServiceProvider>
       </body>
     </html>
   );
