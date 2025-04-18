@@ -6,34 +6,31 @@ import Image from 'next/image'
 import { useUser,UserButton } from '@clerk/nextjs'
 import Link from 'next/link'
 
-
-
 const HeaderBar = () => {
     const {user, isSignedIn} = useUser()
 
     return (
         <div className="p-5 flex justify-between items-center border shadow-md">
             <div className='flex flex-row items-center gap-2'>
-                <Image src="/expenseLogo.png" height={40} width ={50} alt="logo"/>
-                <span className='hidden sm:block  text-green-700 font-bold text-2xl italic  '>Expense Tracker</span>
+                <Image src="/moneyMindLogo.png" height={40} width={50} alt="Money Mind Logo"/>
+                <span className='hidden sm:block text-orange-700 font-bold text-2xl italic'>Money Mind</span>
             </div>
 
             {isSignedIn ?
             <div className='flex gap-5 items-center'>
-            <UserButton/>
-            <Link href="/dashboard">
-                    <Button variant='outline' className='rounded-full italic'>Dashboard</Button>
-            </Link>
-            </div>
-            
-            :(
-                <div className='flex gap-5 items-center'>
+                <UserButton/>
                 <Link href="/dashboard">
                     <Button variant='outline' className='rounded-full italic'>Dashboard</Button>
                 </Link>
-                <Link href="/sign-in">
-                    <Button  className='rounded-full italic'>Getting Started</Button>
-                </Link>
+            </div>
+            :(
+                <div className='flex gap-5 items-center'>
+                    <Link href="/dashboard">
+                        <Button variant='outline' className='rounded-full italic'>Dashboard</Button>
+                    </Link>
+                    <Link href="/sign-in">
+                        <Button className='rounded-full italic'>Getting Started</Button>
+                    </Link>
                 </div>
             )}
         </div>

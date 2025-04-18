@@ -17,8 +17,11 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "SaaS AI-Expense Tracker",
-  description: "AI-Expense Tracker deisnged for personal and business use", 
+  title: "Money Mind",
+  description: "AI-Powered Money Mind designed for personal and business use",
+  icons: {
+    icon: '/moneyMindLogo.png',
+  },
 };
 
 export default function RootLayout({

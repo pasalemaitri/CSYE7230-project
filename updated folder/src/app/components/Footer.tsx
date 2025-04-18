@@ -8,7 +8,7 @@ export default function Footer() {
       <footer className="bg-gray-200 text-black py-4">
         <div className="container mx-auto text-center">
           <p className="text-sm">
-            © {new Date().getFullYear()} AI Enhanced Expense Tracker. All rights reserved.
+            © {new Date().getFullYear()} AI Enhanced Money Mind. All rights reserved.
           </p>
           <p className="text-sm">
             Built with ❤️ using Next.js
